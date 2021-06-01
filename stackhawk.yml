@@ -1,0 +1,5 @@
+# stackhawk configuration for vuln_node_express
+app:
+  applicationId: 678ff5e8-7e78-4392-9a14-2feb3c1eb1e6 # (required)
+  env: Pre-Production # (required)
+  host: http://localhost:3000 # (required)
