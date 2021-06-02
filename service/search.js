@@ -2,9 +2,9 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./db/vulny.db');
 
 const searchByName = function (searchText, cb) {
-
-  db.all("select id,name,description from item where name like '%" + searchText + "%'", [], function (err, rows) {
-  //db.all("select id,name,description from item where name like '%?%'", [searchText], function (err, rows) {
+  const search = 
+  //db.all("select id,name,description from item where name like '%" + searchText + "%'", [], function (err, rows) {
+  db.all("select id,name,description from item where name like '%?%'", [searchText], function (err, rows) {
     if (err) {
       console.log('error ' + err);
       cb(err);
